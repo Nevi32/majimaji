@@ -1,156 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maji Maji | Professional Water Solutions in East Africa</title>
-  <meta name="description" content="Maji Maji provides expert borehole drilling, hydro-geological surveys, and solar pump installations. Serving East Africa with sustainable water solutions." />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2910/2910768.png"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="preload" href="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/1b3800ed4c918892-s.p.woff2" as="font" crossorigin type="font/woff2"/>
+  <link rel="preload" href="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/569ce4b8f30dc480-s.p.woff2" as="font" crossorigin type="font/woff2"/>
+  <link rel="preload" href="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/93f479601ee12b01-s.p.woff2" as="font" crossorigin type="font/woff2"/>
+  <link rel="stylesheet" href="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/css/565c825a6e7db651.css" data-precedence="next"/>
+  <link rel="preload" as="script" fetchPriority="low" href="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/webpack-411dd76f5930eb65.js"/>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/4bd1b696-67ee12fb04071d3b.js" async></script>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/684-c17bebc5517ac65b.js" async></script>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/main-app-a63ddbf2b9686dad.js" async></script>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/874-9a172bef94aec849.js" async></script>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/app/page-6cd974bb0f6928b1.js" async></script>
+  <meta name="next-size-adjust" content=""/>
+  <title>MAJI MAJI - Professional Water Solutions | Borehole Drilling East Africa</title>
+  <meta name="description" content="MAJI MAJI provides expert borehole drilling, hydro-geological surveys, pump testing, installation, and solar water systems across East Africa. Based in Thika, Kenya."/>
   <style>
-    /* Smooth scroll */
-    html { scroll-behavior: smooth; }
-    /* Navbar background change */
-    .scrolled { background: rgba(0,0,0,0.7); backdrop-filter: blur(6px); }
+    /* Modern Grotesque Font Stack */
+    body {
+      font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    /* Curved UI for Images */
+    .curved-image {
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .curved-image:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    /* Warm Navbar & Buttons */
+    .warm-nav a {
+      color: #5a5a5a;
+      font-weight: 500;
+      position: relative;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease;
+    }
+    .warm-nav a:hover {
+      color: #e66f51;
+    }
+    .warm-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #e66f51;
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+    .warm-nav a:hover::after {
+      width: 70%;
+    }
+
+    /* Frosted Glass Header */
+    .frosted-header {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.03);
+    }
+
+    /* Button Styles */
+    .btn-primary {
+      background: linear-gradient(135deg, #e66f51, #d65a3f);
+      color: white;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #d65a3f, #c74b32);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(230, 111, 81, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background: white;
+      color: #333;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+    }
+
+    /* Service Icons */
+    .service-icon {
+      transition: transform 0.3s ease;
+    }
+    .service-icon:hover {
+      transform: scale(1.1);
+    }
   </style>
+  <script>document.querySelectorAll('body link[rel="icon"], body link[rel="apple-touch-icon"]').forEach(el => document.head.appendChild(el))</script>
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule></script>
 </head>
-<body class="font-sans text-gray-800">
+<body class="__variable_c2c051 __variable_208818 __variable_5edc4b antialiased">
+  <div class="min-h-screen">
 
-  <!-- Navbar -->
-  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors">
-    <nav class="flex items-center justify-between p-4 max-w-7xl mx-auto">
-      <a href="#home" class="text-2xl font-bold text-blue-600">MAJI MAJI</a>
-      <div class="hidden md:flex space-x-6">
-        <a href="#services" class="hover:text-blue-500">Services</a>
-        <a href="#about" class="hover:text-blue-500">About</a>
-        <a href="#why" class="hover:text-blue-500">Why Us</a>
-        <a href="#contact" class="hover:text-blue-500">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?water,africa');">
-    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-white">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Reliable Water Solutions for East Africa</h1>
-      <p class="text-lg md:text-xl mb-6">Expert Borehole Drilling • Hydro-Geological Surveys • Solar Pump Installations</p>
-      <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-white font-semibold">Get Free Quote</a>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="py-16 bg-gray-100">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-lg p-6 rounded-lg">
-          <img src="https://source.unsplash.com/400x300/?drilling,water" alt="Borehole Drilling" class="rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2">Borehole Drilling</h3>
-          <p>Professional borehole drilling with modern equipment for sustainable water supply.</p>
-        </div>
-        <div class="bg-white shadow-lg p-6 rounded-lg">
-          <img src="https://source.unsplash.com/400x300/?survey,geology" alt="Hydro-Geological Surveys" class="rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2">Hydro-Geological Surveys</h3>
-          <p>Expert site surveys and analysis to identify optimal drilling locations.</p>
-        </div>
-        <div class="bg-white shadow-lg p-6 rounded-lg">
-          <img src="https://source.unsplash.com/400x300/?solar,pump" alt="Solar Pump Installations" class="rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2">Solar Pump Installations</h3>
-          <p>Efficient solar-powered pumping systems for affordable water distribution.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <img src="https://source.unsplash.com/600x400/?water,community" alt="Maji Maji team" class="rounded-lg shadow-lg">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">About Us</h2>
-        <p class="mb-4">At MAJI MAJI, we are committed to providing sustainable water solutions for communities and businesses across East Africa. With over 8 years of expertise and 150+ completed projects, we are a trusted partner in reliable water access.</p>
-        <div class="grid grid-cols-2 gap-6 mt-6">
-          <div>
-            <h3 class="text-2xl font-bold text-blue-600">150+</h3>
-            <p>Projects Completed</p>
+    <!-- HEADER - Frosted Glass -->
+    <header class="frosted-header fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-2xl font-['Pacifico'] text-[#e66f51]">MAJI MAJI</div>
           </div>
-          <div>
-            <h3 class="text-2xl font-bold text-blue-600">8+</h3>
-            <p>Years Experience</p>
+          <nav class="hidden md:flex space-x-8 warm-nav">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="md:hidden">
+            <button class="text-gray-700">
+              <i class="ri-menu-line text-xl"></i>
+            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Why Us -->
-  <section id="why" class="py-16 bg-blue-50">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-12">Why Choose Maji Maji?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Trusted Experts</h3>
-          <p>Experienced engineers delivering reliable results with modern techniques.</p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Sustainable Solutions</h3>
-          <p>We focus on environmentally friendly water systems for long-term impact.</p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Community Focused</h3>
-          <p>Dedicated to improving access to clean water for East African communities.</p>
+    <!-- HERO SECTION - Darker Overlay -->
+    <section class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center pt-20"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://readdy.ai/api/search-image?query=Professional%20borehole%20drilling%20equipment%20in%20East%20African%20landscape%20with%20acacia%20trees%20and%20red%20soil%2C%20workers%20in%20safety%20gear%20operating%20modern%20drilling%20machinery%2C%20blue%20sky%20with%20scattered%20clouds%2C%20wide%20open%20savanna%20background%2C%20industrial%20photography%20style%2C%20high%20quality%2C%20realistic%20lighting&width=1920&height=1080&seq=hero-borehole&orientation=landscape')">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="max-w-3xl">
+          <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">Professional Water Solutions for East Africa</h1>
+          <p class="text-xl text-gray-200 mb-8 leading-relaxed">Expert borehole drilling, hydro-geological surveys, and solar pump installations. Serving communities across East Africa with reliable water access solutions.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="btn-primary px-8 py-4 rounded-xl font-semibold whitespace-nowrap cursor-pointer">Get Free Quote</button>
+            <button class="btn-secondary px-8 py-4 rounded-xl font-semibold whitespace-nowrap cursor-pointer">View Our Work</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
-        <p class="mb-6">Ready to bring clean, reliable water to your community or business? Reach out to us today!</p>
-        <ul class="space-y-3">
-          <li><strong>Phone:</strong> <a href="tel:+254700000000" class="text-blue-600">+254 700 000 000</a></li>
-          <li><strong>Email:</strong> <a href="mailto:info@majimaji.co.ke" class="text-blue-600">info@majimaji.co.ke</a></li>
-          <li><strong>Location:</strong> Thika, Kenya</li>
-        </ul>
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive water solutions tailored for East African communities and businesses</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Repeat for each service -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20borehole%20drilling%20rig%20in%20action%20with%20African%20workers%20in%20safety%20gear%2C%20red%20earth%20landscape%2C%20professional%20drilling%20equipment%2C%20clear%20blue%20sky%2C%20industrial%20photography%2C%20high%20quality%20realistic%20image&width=400&height=300&seq=drilling-service&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-hammer-line text-2xl text-orange-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Borehole Drilling</h3>
+              <p class="text-gray-600">Professional water borehole drilling services using state-of-the-art equipment for reliable water access in residential and commercial properties.</p>
+            </div>
+          </div>
+
+          <!-- Repeat similar blocks for other services with different icons/colors -->
+          <!-- Hydro Survey -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Hydrogeological%20survey%20equipment%20in%20East%20African%20terrain%2C%20geologist%20examining%20rock%20formations%2C%20survey%20instruments%2C%20acacia%20trees%20in%20background%2C%20professional%20geological%20work%2C%20realistic%20photography&width=400&height=300&seq=hydro-survey&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-search-line text-2xl text-teal-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Hydro-Geological Survey</h3>
+              <p class="text-gray-600">Comprehensive ground water surveys and geological assessments to identify optimal drilling locations and ensure successful water extraction.</p>
+            </div>
+          </div>
+
+          <!-- Pump Testing -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Pump%20testing%20equipment%20at%20water%20borehole%20site%2C%20African%20technicians%20conducting%20water%20flow%20tests%2C%20measuring%20instruments%2C%20rural%20East%20African%20setting%2C%20professional%20water%20testing%2C%20realistic%20industrial%20photography&width=400&height=300&seq=pump-testing&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-test-tube-line text-2xl text-amber-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Pump Testing</h3>
+              <p class="text-gray-600">Professional pump performance testing and water quality analysis to ensure optimal system efficiency and water safety standards.</p>
+            </div>
+          </div>
+
+          <!-- Pump Installation -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Water%20pump%20installation%20at%20African%20borehole%20site%2C%20technicians%20installing%20submersible%20pump%20equipment%2C%20water%20storage%20tanks%2C%20professional%20installation%20work%2C%20East%20African%20landscape%20background&width=400&height=300&seq=pump-install&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-settings-3-line text-2xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Pump Installation</h3>
+              <p class="text-gray-600">Expert installation of submersible and surface pumps with complete system setup including piping, electrical connections, and storage tanks.</p>
+            </div>
+          </div>
+
+          <!-- Solar System -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Solar%20panel%20installation%20for%20water%20pumping%20system%20in%20East%20Africa%2C%20solar%20panels%20mounted%20near%20borehole%2C%20African%20technicians%20working%2C%20renewable%20energy%20water%20solution%2C%20bright%20sunny%20day%2C%20professional%20installation&width=400&height=300&seq=solarization&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-sun-line text-2xl text-lime-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Solar System Installation</h3>
+              <p class="text-gray-600">Sustainable solar-powered water pumping systems that provide reliable, eco-friendly water solutions with reduced operational costs.</p>
+            </div>
+          </div>
+
+          <!-- Maintenance -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-cover bg-center bg-no-repeat curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Water%20system%20maintenance%20work%20in%20East%20African%20setting%2C%20technicians%20servicing%20borehole%20equipment%2C%20tools%20and%20maintenance%20supplies%2C%20professional%20service%20work%2C%20rural%20African%20landscape%20background&width=400&height=300&seq=maintenance&orientation=landscape')">
+            </div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-4 service-icon">
+                <i class="ri-tools-line text-2xl text-rose-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Maintenance & Support</h3>
+              <p class="text-gray-600">Comprehensive maintenance services and 24/7 support to ensure your water systems operate efficiently and reliably year-round.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <form class="bg-gray-100 p-6 rounded-lg shadow-md">
-        <div class="mb-4">
-          <label class="block text-sm font-semibold mb-1">Name</label>
-          <input type="text" class="w-full border rounded-md p-2" placeholder="Your Name" required>
-        </div>
-        <div class="mb-4">
-          <label class="block text-sm font-semibold mb-1">Email</label>
-          <input type="email" class="w-full border rounded-md p-2" placeholder="Your Email" required>
-        </div>
-        <div class="mb-4">
-          <label class="block text-sm font-semibold mb-1">Message</label>
-          <textarea class="w-full border rounded-md p-2" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="max-w-6xl mx-auto text-center">
-      <p>&copy; 2025 Maji Maji. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">About MAJI MAJI</h2>
+            <p class="text-lg text-gray-600 mb-6">MAJI MAJI has become East Africa's trusted partner for comprehensive water solutions. Based in Thika town, we specialize in providing reliable access to clean water through professional borehole drilling and sustainable pumping systems.</p>
+            <p class="text-lg text-gray-600 mb-6">Our expertise spans across hydro-geological surveys, pump testing, installation services, and solar-powered water systems. We understand the unique challenges of East African terrain and climate, delivering solutions that are both effective and environmentally sustainable.</p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-[#e66f51] mb-2">150+</div>
+                <div class="text-gray-600">Successful Projects</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-[#e66f51] mb-2">8+</div>
+                <div class="text-gray-600">Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="aspect-square rounded-3xl overflow-hidden bg-cover bg-center curved-image"
+              style="background-image: url('https://readdy.ai/api/search-image?query=Professional%20African%20businessman%20founder%20of%20water%20drilling%20company%2C%20confident%20pose%20in%20front%20of%20drilling%20equipment%2C%20East%20African%20landscape%20background%2C%20professional%20portrait%20photography%2C%20warm%20lighting%2C%20successful%20entrepreneur&width=600&height=600&seq=founder-manases&orientation=squarish')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Script -->
+    <!-- WHY CHOOSE US -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose MAJI MAJI</h2>
+          <p class="text-xl text-gray-600">Trusted expertise for all your water solution needs</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="ri-award-line text-3xl text-orange-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Certified Professionals</h3>
+            <p class="text-gray-600">Licensed and experienced team with extensive knowledge of East African geology</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="ri-leaf-line text-3xl text-teal-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Eco-Friendly Solutions</h3>
+            <p class="text-gray-600">Solar-powered systems and sustainable practices for environmental protection</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="ri-time-line text-3xl text-amber-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">24/7 Support</h3>
+            <p class="text-gray-600">Round-the-clock customer support and emergency maintenance services</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="ri-shield-check-line text-3xl text-indigo-600"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Quality Guarantee</h3>
+            <p class="text-gray-600">Comprehensive warranty and quality assurance on all our installations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p class="text-xl text-gray-600">Get in touch for your water solution needs</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <div class="space-y-8">
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                  <i class="ri-phone-line text-xl text-orange-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                  <p class="text-gray-600">+254712472043</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center">
+                  <i class="ri-mail-line text-xl text-teal-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Email</h3>
+                  <p class="text-gray-600">maina.manases@yahoo.com</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+                  <i class="ri-map-pin-line text-xl text-amber-600"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold mb-2">Location</h3>
+                  <p class="text-gray-600">Thika Town, Kenya<br/>East Africa</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-12">
+              <h3 class="text-2xl font-semibold mb-4">Service Areas</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <div class="font-semibold text-gray-900">Kenya</div>
+                  <div class="text-sm text-gray-600">Central & Eastern Regions</div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <div class="font-semibold text-gray-900">Uganda</div>
+                  <div class="text-sm text-gray-600">Selected Areas</div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <div class="font-semibold text-gray-900">Tanzania</div>
+                  <div class="text-sm text-gray-600">Northern Regions</div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <div class="font-semibold text-gray-900">Rwanda</div>
+                  <div class="text-sm text-gray-600">Major Cities</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-3xl">
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label class="block text-sm font-semibold text-gray-900 mb-2">Full Name</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#e66f51] focus:border-transparent text-sm" placeholder="Enter your full name" required name="full_name"/>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-900 mb-2">Phone Number</label>
+                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#e66f51] focus:border-transparent text-sm" placeholder="Enter your phone number" required name="phone"/>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-900 mb-2">Email Address</label>
+                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#e66f51] focus:border-transparent text-sm" placeholder="Enter your email address" required name="email"/>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-900 mb-2">Service Needed</label>
+                <div class="relative">
+                  <button type="button" class="w-full px-4 py-3 pr-8 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#e66f51] focus:border-transparent text-sm text-left bg-white cursor-pointer" id="service-selector">Select service type</button>
+                  <i class="ri-arrow-down-s-line absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                  <input type="hidden" id="service-input" name="service_type"/>
+                </div>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#e66f51] focus:border-transparent text-sm resize-none" placeholder="Tell us about your project requirements..." maxLength="500" required></textarea>
+                <div class="text-xs text-gray-500 mt-1">Maximum 500 characters</div>
+              </div>
+              <button type="submit" class="w-full btn-primary px-8 py-4 rounded-xl font-semibold whitespace-nowrap cursor-pointer">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <div class="text-2xl font-['Pacifico'] text-[#e66f51] mb-4">MAJI MAJI</div>
+            <p class="text-gray-400 mb-4">East Africa's trusted water solutions provider, delivering reliable borehole drilling and solar pump installations.</p>
+            <div class="flex space-x-4">
+              <div class="w-10 h-10 bg-[#e66f51] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#d65a3f] transition">
+                <i class="ri-facebook-fill text-white"></i>
+              </div>
+              <div class="w-10 h-10 bg-[#e66f51] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#d65a3f] transition">
+                <i class="ri-twitter-fill text-white"></i>
+              </div>
+              <div class="w-10 h-10 bg-[#e66f51] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#d65a3f] transition">
+                <i class="ri-linkedin-fill text-white"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Services</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a class="hover:text-white cursor-pointer" href="#services">Borehole Drilling</a></li>
+              <li><a class="hover:text-white cursor-pointer" href="#services">Hydro-Geological Survey</a></li>
+              <li><a class="hover:text-white cursor-pointer" href="#services">Pump Testing</a></li>
+              <li><a class="hover:text-white cursor-pointer" href="#services">Pump Installation</a></li>
+              <li><a class="hover:text-white cursor-pointer" href="#services">Solar Systems</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact</h3>
+            <div class="space-y-2 text-gray-400">
+              <div>+254712472043</div>
+              <div>maina.manases@yahoo.com</div>
+              <div>Thika Town, Kenya</div>
+              <div>East Africa</div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Business Hours</h3>
+            <div class="space-y-2 text-gray-400">
+              <div>Monday - Friday: 8:00 AM - 6:00 PM</div>
+              <div>Saturday: 8:00 AM - 4:00 PM</div>
+              <div>Sunday: Emergency Only</div>
+              <div class="mt-4 text-[#e66f51]">24/7 Emergency Support</div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>© 2024 MAJI MAJI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JAVASCRIPT (unchanged functionality, enhanced styling via CSS above) -->
   <script>
-    window.addEventListener("scroll", function () {
-      const navbar = document.getElementById("navbar");
-      if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceSelector = document.getElementById('service-selector');
+      const serviceInput = document.getElementById('service-input');
+      const services = ['Borehole Drilling', 'Hydro-Geological Survey', 'Pump Testing', 'Pump Installation', 'Solar System Installation', 'Maintenance & Support'];
+      
+      if (serviceSelector) {
+        serviceSelector.addEventListener('click', function() {
+          const dropdown = document.createElement('div');
+          dropdown.className = 'absolute top-full left-0 w-full bg-white border border-gray-300 rounded-xl mt-1 shadow-xl z-10';
+          
+          services.forEach(service => {
+            const option = document.createElement('div');
+            option.className = 'px-4 py-3 hover:bg-gray-50 cursor-pointer text-sm transition';
+            option.textContent = service;
+            option.addEventListener('click', function() {
+              serviceSelector.textContent = service;
+              serviceInput.value = service;
+              dropdown.remove();
+            });
+            dropdown.appendChild(option);
+          });
+          
+          const existingDropdown = serviceSelector.parentNode.querySelector('.absolute');
+          if (existingDropdown) existingDropdown.remove();
+          
+          serviceSelector.parentNode.appendChild(dropdown);
+          
+          setTimeout(() => {
+            document.addEventListener('click', function closeDropdown(e) {
+              if (!serviceSelector.parentNode.contains(e.target)) {
+                dropdown.remove();
+                document.removeEventListener('click', closeDropdown);
+              }
+            });
+          }, 0);
+        });
       }
+
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const requiredFields = form.querySelectorAll('[required]');
+          let isValid = true;
+
+          requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+              isValid = false;
+              field.classList.add('border-red-500');
+            } else {
+              field.classList.remove('border-red-500');
+            }
+          });
+
+          if (!serviceInput.value) {
+            isValid = false;
+            serviceSelector.classList.add('border-red-500');
+          } else {
+            serviceSelector.classList.remove('border-red-500');
+          }
+
+          if (isValid) {
+            const button = form.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Message Sent Successfully!';
+            button.classList.remove('bg-[#e66f51]', 'hover:bg-[#d65a3f]');
+            button.classList.add('bg-green-600', 'hover:bg-green-700');
+
+            setTimeout(() => {
+              button.textContent = originalText;
+              button.classList.remove('bg-green-600', 'hover:bg-green-700');
+              button.classList.add('bg-[#e66f51]', 'hover:bg-[#d65a3f]');
+              form.reset();
+              serviceSelector.textContent = 'Select service type';
+              serviceInput.value = '';
+            }, 3000);
+          } else {
+            alert('Please fill in all required fields.');
+          }
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
     });
   </script>
+
+  <!-- Next.js hydration scripts (unchanged) -->
+  <script src="/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/chunks/webpack-411dd76f5930eb65.js" async></script>
+  <script>(self.__next_f=self.__next_f||[]).push([0])</script>
+  <script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[7555,[],\"\"]\n3:I[1295,[],\"\"]\n5:I[894,[],\"ClientPageRoot\"]\n6:I[1057,[\"874\",\"static/chunks/874-9a172bef94aec849.js\",\"974\",\"static/chunks/app/page-6cd974bb0f6928b1.js\"],\"default\"]\n9:I[9665,[],\"MetadataBoundary\"]\nb:I[9665,[],\"OutletBoundary\"]\ne:I[4911,[],\"AsyncMetadataOutlet\"]\n10:I[9665,[],\"ViewportBoundary\"]\n12:I[6614,[],\"\"]\n:HL[\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/1b3800ed4c918892-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/569ce4b8f30dc480-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/media/93f479601ee12b01-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/css/565c825a6e7db651.css\",\"style\"]\n4:T1360,"])</script>
+  <script>self.__next_f.push([1,"\n            // Service selector dropdown functionality\n            document.addEventListener('DOMContentLoaded', function() {\n              const serviceSelector = document.getElementById('service-selector');\n              const serviceInput = document.getElementById('service-input');\n              const services = ['Borehole Drilling', 'Hydro-Geological Survey', 'Pump Testing', 'Pump Installation', 'Solar System Installation', 'Maintenance \u0026 Support'];\n              \n              if (serviceSelector) {\n                serviceSelector.addEventListener('click', function() {\n                  const dropdown = document.createElement('div');\n                  dropdown.className = 'absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg mt-1 shadow-lg z-10';\n                  \n                  services.forEach(service =\u003e {\n                    const option = document.createElement('div');\n                    option.className = 'px-4 py-2 hover:bg-gray-50 cursor-pointer text-sm';\n                    option.textContent = service;\n                    option.addEventListener('click', function() {\n                      serviceSelector.textContent = service;\n                      serviceInput.value = service;\n                      dropdown.remove();\n                    });\n                    dropdown.appendChild(option);\n                  });\n                  \n                  // Remove existing dropdown\n                  const existingDropdown = serviceSelector.parentNode.querySelector('.absolute');\n                  if (existingDropdown) {\n                    existingDropdown.remove();\n                  }\n                  \n                  serviceSelector.parentNode.appendChild(dropdown);\n                  \n                  // Close dropdown when clicking outside\n                  setTimeout(() =\u003e {\n                    document.addEventListener('click', function closeDropdown(e) {\n                      if (!serviceSelector.parentNode.contains(e.target)) {\n                        dropdown.remove();\n                        document.removeEventListener('click', closeDropdown);\n                      }\n                    });\n                  }, 0);\n                });\n              }\n              \n              // Form submission\n              const form = document.getElementById('contact-form');\n              if (form) {\n                form.addEventListener('submit', function(e) {\n                  e.preventDefault();\n                  \n                  // Basic validation\n                  const requiredFields = form.querySelectorAll('[required]');\n                  let isValid = true;\n                  \n                  requiredFields.forEach(field =\u003e {\n                    if (!field.value.trim()) {\n                      isValid = false;\n                      field.classList.add('border-red-500');\n                    } else {\n                      field.classList.remove('border-red-500');\n                    }\n                  });\n                  \n                  if (!serviceInput.value) {\n                    isValid = false;\n                    serviceSelector.classList.add('border-red-500');\n                  } else {\n                    serviceSelector.classList.remove('border-red-500');\n                  }\n                  \n                  if (isValid) {\n                    // Show success message\n                    const button = form.querySelector('button[type=\"submit\"]');\n                    const originalText = button.textContent;\n                    button.textContent = 'Message Sent Successfully!';\n                    button.className = button.className.replace('bg-blue-600 hover:bg-blue-700', 'bg-green-600 hover:bg-green-700');\n                    \n                    setTimeout(() =\u003e {\n                      button.textContent = originalText;\n                      button.className = button.className.replace('bg-green-600 hover:bg-green-700', 'bg-blue-600 hover:bg-blue-700');\n                      form.reset();\n                      serviceSelector.textContent = 'Select service type';\n                      serviceInput.value = '';\n                    }, 3000);\n                  } else {\n                    // Show error message\n                    alert('Please fill in all required fields.');\n                  }\n                });\n              }\n              \n              // Smooth scrolling for anchor links\n              document.querySelectorAll('a[href^=\"#\"]').forEach(anchor =\u003e {\n                anchor.addEventListener('click', function (e) {\n                  e.preventDefault();\n                  const target = document.querySelector(this.getAttribute('href'));\n                  if (target) {\n                    target.scrollIntoView({\n                      behavior: 'smooth',\n                      block: 'start'\n                    });\n                  }\n                });\n              });\n            });\n          "])</script>
+  <script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"PwTr42UuMODcqEkPdbheL\",\"p\":\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/preview/10c0ff10-a01b-487e-abe0-1232964e24f1/1614341/_next/static/css/565c825a6e7db651.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_c2c051 __variable_208818 __variable_5edc4b antialiased\",\"children\":[[\"$\",\"$L2\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L3\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center h-screen text-center px-4\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl md:text-5xl font-semibold text-gray-100\",\"children\":\"404\"}],[\"$\",\"h1\",null,{\"className\":\"text-2xl md:text-3xl font-semibold mt-6\",\"children\":\"This page has not been generated\"}],[\"$\",\"p\",null,{\"className\":\"mt-4 text-xl md:text-2xl text-gray-500\",\"children\":\"Tell me what you would like on this page\"}]]}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$4\"}}]]}]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$L5\",null,{\"Component\":\"$6\",\"searchParams\":{},\"params\":{},\"promises\":[\"$@7\",\"$@8\"]}],[\"$\",\"$L9\",null,{\"children\":\"$La\"}],null,[\"$\",\"$Lb\",null,{\"children\":[\"$Lc\",\"$Ld\",[\"$\",\"$Le\",null,{\"promise\":\"$@f\"}]]}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"W3Fs2Y6TYwRHKIBR9DDxt\",{\"children\":[[\"$\",\"$L10\",null,{\"children\":\"$L11\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$12\",\"$undefined\"],\"s\":false,\"S\":true}\n"])</script>
+  <script>self.__next_f.push([1,"13:\"$Sreact.suspense\"\n14:I[4911,[],\"AsyncMetadata\"]\n7:{}\n8:{}\na:[\"$\",\"$13\",null,{\"fallback\":null,\"children\":[\"$\",\"$L14\",null,{\"promise\":\"$@15\"}]}]\n"])</script>
+  <script>self.__next_f.push([1,"d:null\n"])</script>
+  <script>self.__next_f.push([1,"11:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nc:null\n"])</script>
+  <script>self.__next_f.push([1,"15:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"MAJI MAJI - Professional Water Solutions | Borehole Drilling East Africa\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"MAJI MAJI provides expert borehole drilling, hydro-geological surveys, pump testing, installation, and solar water systems across East Africa. Based in Thika, Kenya.\"}]],\"error\":null,\"digest\":\"$undefined\"}\nf:{\"metadata\":\"$15:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])</script>
 </body>
 </html>
