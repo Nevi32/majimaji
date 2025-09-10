@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maji Maji - Professional Water Solutions for East Africa</title>
     <link rel="icon" href="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load Font Awesome asynchronously -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Load Google Fonts asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    
+    <!-- Inline critical CSS only -->
     <style>
-        /* Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
-
-        /* Base Styles */
+        /* Critical CSS - Only what's needed for above-the-fold content */
         :root {
             --primary-color: #0071bc;
             --secondary-color: #00a0df;
@@ -23,6 +32,73 @@
         }
 
         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px;
+            z-index: 100;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 50px 100px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 113, 188, 0.1), rgba(0, 160, 223, 0.1));
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -1332,6 +1408,14 @@
             }
         }
     </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    
+    <!-- Preload important images -->
+    <link rel="preload" href="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" as="image">
+    <link rel="preload" href="Gemini_Generated_Image_azgp92azgp92azgp (1).png" as="image" imagesrcset="Gemini_Generated_Image_azgp92azgp92azgp (1)-small.jpg 600w, Gemini_Generated_Image_azgp92azgp92azgp (1)-medium.jpg 900w, Gemini_Generated_Image_azgp92azgp92azgp (1).png 1200w" imagesizes="(max-width: 600px) 100vw, (max-width: 900px) 90vw, 800px">
 </head>
 <body>
     
@@ -1339,13 +1423,13 @@
     <div class="preloader">
         <div class="logo-container">
             <div class="logo-fade">
-                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
             </div>
             <div class="logo-fade">
-                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
             </div>
             <div class="logo-fade">
-                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
             </div>
         </div>
     </div>
@@ -1353,7 +1437,7 @@
     <!-- Navigation -->
     <nav>
         <div class="logo">
-            <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo">
+            <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="40" height="40">
             <span>Maji Maji</span>
         </div>
         <div class="nav-toggle">
@@ -1385,7 +1469,7 @@
                 <div class="shape shape-2"></div>
                 <div class="shape shape-3"></div>
             </div>
-             <img src="Gemini_Generated_Image_azgp92azgp92azgp (1).png" alt="Water Drilling in East Africa">
+             <img src="Gemini_Generated_Image_azgp92azgp92azgp (1).png" alt="Water Drilling in East Africa" width="600" height="400" loading="lazy">
         </div>
     </section>
 
@@ -1402,7 +1486,7 @@
             <div class="services-carousel">
                 <div class="service-slide active">
                     <div class="service-image">
-                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Borehole Drilling">
+                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Borehole Drilling" width="500" height="400" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Borehole Drilling</h3>
@@ -1418,7 +1502,7 @@
 
                 <div class="service-slide">
                     <div class="service-image">
-                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey">
+                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey" width="500" height="400" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Hydro-Geological Survey</h3>
@@ -1434,7 +1518,7 @@
 
                 <div class="service-slide">
                     <div class="service-image">
-                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Pump Testing">
+                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Pump Testing" width="500" height="400" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Pump Testing</h3>
@@ -1450,7 +1534,7 @@
 
                 <div class="service-slide">
                     <div class="service-image">
-                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation" width="500" height="400" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Pump Installation</h3>
@@ -1466,7 +1550,7 @@
 
                 <div class="service-slide">
                     <div class="service-image">
-                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Solar System Installation">
+                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Solar System Installation" width="500" height="400" loading="lazy">
                     </div>
                     <div class="service-content">
                         <h3>Solar System Installation</h3>
@@ -1504,7 +1588,7 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Borehole Drilling">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Borehole Drilling" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Borehole Drilling</h3>
@@ -1515,7 +1599,7 @@
 
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey">
+                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Hydro-Geological Survey</h3>
@@ -1526,7 +1610,7 @@
 
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Pump Testing">
+                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Pump Testing" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Pump Testing</h3>
@@ -1537,7 +1621,7 @@
 
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Pump Installation</h3>
@@ -1548,7 +1632,7 @@
 
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Solar System Installation">
+                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Solar System Installation" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Solar System Installation</h3>
@@ -1559,7 +1643,7 @@
 
                 <div class="service-card">
                     <div class="service-card-image">
-                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Solar System Installation">
+                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Solar System Installation" width="500" height="250" loading="lazy">
                     </div>
                     <div class="service-card-content">
                         <h3>Maintenance & Support</h3>
@@ -1580,7 +1664,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="Gemini_Generated_Image_xhgrq6xhgrq6xhgr.png"  alt="Maji Maji Team">
+                    <img src="Gemini_Generated_Image_xhgrq6xhgrq6xhgr.png" alt="Maji Maji Team" width="500" height="400" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h3>East Africa's Trusted Water Solutions Provider</h3>
@@ -1654,7 +1738,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-img">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Kamau">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Kamau" width="70" height="70" loading="lazy">
                         </div>
                         <div class="testimonial-client">
                             <h4>John Kamau</h4>
@@ -1675,7 +1759,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-img">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mwangi">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mwangi" width="70" height="70" loading="lazy">
                         </div>
                         <div class="testimonial-client">
                             <h4>Sarah Mwangi</h4>
@@ -1696,7 +1780,7 @@
                 <div class="testimonial-card">
                     <div class="testimonial-header">
                         <div class="testimonial-img">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Ochieng">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Ochieng" width="70" height="70" loading="lazy">
                         </div>
                         <div class="testimonial-client">
                             <h4>David Ochieng</h4>
@@ -1866,7 +1950,17 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
+    <!-- Load JavaScript asynchronously -->
     <script>
+        // Function to load non-critical JavaScript
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            script.onload = callback;
+            document.body.appendChild(script);
+        }
+
         // Preloader
         window.addEventListener('load', () => {
             setTimeout(() => {
@@ -1899,9 +1993,11 @@
         });
 
         // Mobile menu toggle
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
 
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
@@ -1918,7 +2014,7 @@
             });
         });
 
-        // Services Carousel Functionality
+        // Services Carousel Functionality - Modified to remove auto-scroll
         document.addEventListener('DOMContentLoaded', function() {
             const slides = document.querySelectorAll('.service-slide');
             const dots = document.querySelectorAll('.dot');
@@ -1976,23 +2072,11 @@
                 });
             });
 
-            // Auto-advance slides (optional)
-            let slideInterval = setInterval(nextSlide, 5000);
-
-            // Pause auto-advancement when interacting with carousel
-            const carousel = document.querySelector('.services-carousel');
-            carousel.addEventListener('mouseenter', () => {
-                clearInterval(slideInterval);
-            });
-
-            carousel.addEventListener('mouseleave', () => {
-                slideInterval = setInterval(nextSlide, 5000);
-            });
-
             // Handle swipe events for touch devices
             let startX = 0;
             let endX = 0;
             
+            const carousel = document.querySelector('.services-carousel');
             carousel.addEventListener('touchstart', (e) => {
                 startX = e.touches[0].clientX;
             }, false);
