@@ -3,245 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maji Naji | Water Solutions</title>
+  <title>Maji Maji | Water Solutions</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- AOS Scroll Animations -->
+  <!-- AOS Animations -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
   <style>
     :root {
       --primary: #4cb6eb;
-      --glass-bg: rgba(255, 255, 255, 0.15);
-      --glass-border: rgba(255, 255, 255, 0.3);
+      --secondary: #1e3a8a;
+      --glass-bg: rgba(255, 255, 255, 0.12);
+      --glass-border: rgba(255, 255, 255, 0.25);
+      --dark-bg: #0f172a;
       --text-dark: #222;
-      --text-light: #f9f9f9;
-      --bg-dark: #0f172a;
+      --text-light: #f1f5f9;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Outfit", sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #fff; color: var(--text-dark); transition: background 0.3s, color 0.3s; }
+    body.dark { background: var(--dark-bg); color: var(--text-light); }
 
-    body {
-      background: #fff;
-      color: var(--text-dark);
-      transition: all 0.3s ease;
-    }
-
-    body.dark {
-      background: var(--bg-dark);
-      color: var(--text-light);
-    }
-
-    header {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-    }
-
-    header video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.6);
-      z-index: -2;
-    }
-
-    header .overlay {
-      background: rgba(0,0,0,0.4);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    header .content {
-      padding: 2rem;
-      border-radius: 20px;
-      background: var(--glass-bg);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(10px);
-    }
-
+    /* NAVIGATION */
     nav {
       position: fixed;
       top: 0; left: 0;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      background: rgba(255,255,255,0.4);
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 8%;
+      background: rgba(255,255,255,0.5);
       backdrop-filter: blur(10px);
-      z-index: 99;
+      z-index: 1000;
+      transition: background 0.3s;
     }
+    nav.dark { background: rgba(0,0,0,0.4); }
+    nav h1 { font-weight: 700; font-size: 1.5rem; color: var(--primary); letter-spacing: 1px; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav ul li a { text-decoration: none; font-weight: 500; color: inherit; transition: color 0.3s; }
+    nav ul li a:hover { color: var(--primary); }
+    .theme-toggle { font-size: 1.2rem; cursor: pointer; }
 
-    nav.dark {
-      background: rgba(0,0,0,0.4);
-    }
-
-    nav h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    nav .theme-toggle {
-      cursor: pointer;
-      font-size: 1.3rem;
-      color: #000;
-    }
-
-    body.dark nav .theme-toggle {
-      color: #fff;
-    }
-
-    section {
-      padding: 5rem 10%;
-    }
-
-    section h2 {
+    /* HERO */
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex; align-items: center; justify-content: center;
       text-align: center;
-      margin-bottom: 3rem;
-      font-size: 2rem;
-      color: var(--primary);
+      color: #fff;
+      overflow: hidden;
     }
-
-    .services, .about, .why-choose, .contact {
-      display: grid;
-      gap: 2rem;
+    header video {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      object-fit: cover; filter: brightness(0.55); z-index: -2;
     }
-
-    .services .card, .why-choose .card {
-      padding: 2rem;
-      border-radius: 20px;
+    header .overlay {
+      position: absolute; width: 100%; height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+      z-index: -1;
+    }
+    header .content {
+      padding: 2rem 3rem;
+      border-radius: 25px;
       background: var(--glass-bg);
       border: 1px solid var(--glass-border);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
+      max-width: 700px;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    header p { margin-bottom: 2rem; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      border-radius: 30px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
       transition: transform 0.3s;
     }
+    .btn:hover { transform: scale(1.05); }
 
-    .services .card:hover, .why-choose .card:hover {
-      transform: translateY(-10px);
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
+    /* SECTIONS */
+    section { padding: 6rem 8%; }
+    section h2 { text-align: center; margin-bottom: 3rem; font-size: 2.2rem; color: var(--primary); }
+
+    /* SERVICES */
     .services {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
     }
-
-    .about {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-
-    .about img {
-      width: 100%;
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
       border-radius: 20px;
-    }
-
-    .why-choose {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .socials {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-    }
-
-    .socials a {
-      font-size: 1.5rem;
-      color: black;
-      transition: color 0.3s;
-    }
-
-    body.dark .socials a {
-      color: white;
-    }
-
-    footer {
-      text-align: center;
       padding: 2rem;
-      background: var(--primary);
-      color: white;
-      margin-top: 3rem;
-      border-radius: 20px 20px 0 0;
+      backdrop-filter: blur(12px);
+      text-align: center;
+      transition: transform 0.3s;
     }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 { margin-bottom: 1rem; font-size: 1.3rem; }
 
-    @media(max-width: 768px) {
-      .about {
-        grid-template-columns: 1fr;
-      }
+    /* ABOUT */
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .about img { width: 100%; border-radius: 20px; }
+    .about p { margin-bottom: 1rem; line-height: 1.6; }
+
+    /* WHY CHOOSE */
+    .why-choose { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+
+    /* CONTACT */
+    .contact { text-align: center; }
+    .socials { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; }
+    .socials a { font-size: 1.5rem; color: black; transition: color 0.3s; }
+    body.dark .socials a { color: white; }
+    .socials a:hover { color: var(--primary); }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      padding: 2rem 8%;
+      text-align: center;
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+      margin-top: 4rem;
+    }
+    footer p { margin-top: 1rem; font-size: 0.9rem; }
+
+    @media(max-width: 900px) {
+      .about { grid-template-columns: 1fr; }
+      header h1 { font-size: 2rem; }
     }
   </style>
 </head>
 <body>
+  <!-- NAV -->
   <nav>
-    <h1>Maji Naji</h1>
+    <h1>Maji Maji</h1>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why">Why Choose</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <i class="fas fa-moon theme-toggle"></i>
   </nav>
 
+  <!-- HERO -->
   <header>
     <video autoplay muted loop>
       <source src="https://www.videvo.net/videvo_files/converted/2017_08/preview/170806_C_LakeWater_02.mp431561.webm" type="video/webm">
     </video>
     <div class="overlay"></div>
-    <div class="content" data-aos="fade-up">
+    <div class="content">
       <h1>Professional Water Solutions for East Africa</h1>
       <p>Expert borehole drilling, hydro-geological surveys, and solar pump installations. Serving communities across East Africa with reliable water access solutions.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </header>
 
-  <section class="services" id="services">
+  <!-- SERVICES -->
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="card" data-aos="fade-up"><h3>Borehole Drilling</h3><p>Professional water borehole drilling services using state-of-the-art equipment.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Hydro-Geological Survey</h3><p>Comprehensive groundwater surveys and geological assessments.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Pump Testing</h3><p>Performance testing and water quality analysis.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Pump Installation</h3><p>Expert installation of submersible and surface pumps.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Solar System Installation</h3><p>Sustainable solar-powered water pumping systems.</p></div>
-    <div class="card" data-aos="fade-up"><h3>Maintenance & Support</h3><p>24/7 support to ensure efficient operations year-round.</p></div>
+    <div class="services">
+      <div class="card" data-aos="fade-up"><h3>Borehole Drilling</h3><p>State-of-the-art drilling for residential and commercial properties.</p></div>
+      <div class="card" data-aos="fade-up"><h3>Hydro-Geological Survey</h3><p>Comprehensive groundwater surveys for optimal drilling sites.</p></div>
+      <div class="card" data-aos="fade-up"><h3>Pump Testing</h3><p>Performance testing & water quality analysis for safe systems.</p></div>
+      <div class="card" data-aos="fade-up"><h3>Pump Installation</h3><p>Expert installation of submersible & surface pumps.</p></div>
+      <div class="card" data-aos="fade-up"><h3>Solar Systems</h3><p>Sustainable solar-powered pumping solutions.</p></div>
+      <div class="card" data-aos="fade-up"><h3>Maintenance</h3><p>24/7 support and professional servicing of water systems.</p></div>
+    </div>
   </section>
 
-  <section class="about" id="about">
+  <!-- ABOUT -->
+  <section id="about" class="about">
     <div data-aos="fade-right">
-      <h2>About Maji Naji</h2>
-      <p>Maji Naji has become East Africa's trusted partner for comprehensive water solutions. Based in Thika, we provide clean water access through professional borehole drilling and sustainable pumping systems.</p>
-      <p>150+ Successful Projects | 8+ Years Experience</p>
+      <h2>About Maji Maji</h2>
+      <p>Maji Maji has become East Africa’s trusted partner for water solutions. Based in Thika, we provide reliable access to clean water through professional borehole drilling and sustainable pumping systems.</p>
+      <p><strong>150+ Projects</strong> | <strong>8+ Years Experience</strong></p>
     </div>
     <img src="https://images.unsplash.com/photo-1612831662722-5c5e2b6f5d36" alt="Water drilling" data-aos="fade-left">
   </section>
 
-  <section class="why-choose" id="why">
+  <!-- WHY CHOOSE -->
+  <section id="why">
     <h2>Why Choose Us</h2>
-    <div class="card" data-aos="zoom-in"><h3>Certified Professionals</h3><p>Licensed team with deep knowledge of East African geology.</p></div>
-    <div class="card" data-aos="zoom-in"><h3>Eco-Friendly Solutions</h3><p>Solar-powered systems and sustainable practices.</p></div>
-    <div class="card" data-aos="zoom-in"><h3>24/7 Support</h3><p>Round-the-clock customer support and emergency maintenance.</p></div>
-    <div class="card" data-aos="zoom-in"><h3>Quality Guarantee</h3><p>Warranty and quality assurance on all installations.</p></div>
+    <div class="why-choose">
+      <div class="card" data-aos="zoom-in"><h3>Certified Professionals</h3><p>Licensed team with deep knowledge of East African geology.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Eco-Friendly Solutions</h3><p>Solar-powered systems and sustainable practices.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>24/7 Support</h3><p>Round-the-clock customer support & emergency services.</p></div>
+      <div class="card" data-aos="zoom-in"><h3>Quality Guarantee</h3><p>Warranty and quality assurance on all installations.</p></div>
+    </div>
   </section>
 
-  <section class="contact" id="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Serving communities across East Africa</p>
+    <p>Serving Kenya, Uganda, Tanzania & Rwanda</p>
     <div class="socials">
       <a href="#"><i class="fab fa-whatsapp"></i></a>
       <a href="#"><i class="fab fa-facebook"></i></a>
@@ -250,11 +221,14 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Maji Naji. All rights reserved.</p>
+    <h3>Maji Maji</h3>
+    <p>Delivering sustainable water access solutions across East Africa.</p>
+    <p>© 2025 Maji Maji. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- SCRIPTS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
     AOS.init({ duration: 1000 });
