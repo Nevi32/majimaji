@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maji Maji - Professional Water Solutions for East Africa</title>
+    <link rel="icon" href="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" type="image/png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load Font Awesome asynchronously -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Load Google Fonts asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    
+    <!-- Inline critical CSS only -->
+    <style>
+        /* Critical CSS - Only what's needed for above-the-fold content */
+        :root {
+            --primary-color: #0071bc;
+            --secondary-color: #00a0df;
+            --accent-color: #005587;
+            --dark-color: #2d3436;
+            --light-color: #f9f9f9;
+            --gray-color: #dfe6e9;
+            --text-color: #333;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px;
+            z-index: 100;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 50px 100px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 113, 188, 0.1), rgba(0, 160, 223, 0.1));
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 14px;
+        }
+
+        .primary-btn {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 113, 188, 0.4);
+        }
+
+        .primary-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 113, 188, 0.6);
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .secondary-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header .accent {
+            color: var(--primary-color);
+        }
+
+        .underline {
+            height: 4px;
+            width: 70px;
+            background: var(--primary-color);
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .underline::before {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            background: var(--secondary-color);
+            top: 0;
+            left: -15px;
+            transform: translateX(-100%);
+        }
+
+        .underline::after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            background: var(--accent-color);
+            top: 0;
+            right: -15px;
+            transform: translateX(100%);
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Preloader - Updated with phasing animation */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .logo-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-fade {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: phaseInOut 2.5s infinite ease-in-out;
+        }
+
+        .logo-fade img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .logo-fade:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .logo-fade:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .logo-fade:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        @keyframes phaseInOut {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            20% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            40% {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 100;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav.scrolled {
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--primary-color);
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        nav.scrolled .logo::after {
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            margin-left: 15px;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 113, 188, 0.4);
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 50px 100px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 113, 188, 0.1), rgba(0, 160, 223, 0.1));
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+            max-width: 600px;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateY(-15deg);
+            transition: var(--transition);
+        }
+
+        .hero-image:hover img {
+            transform: perspective(1000px) rotateY(0);
+        }
+
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape-1 {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 113, 188, 0.2);
+            top: -30px;
+            left: 30%;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .shape-2 {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 160, 223, 0.2);
+            bottom: 20%;
+            right: 10%;
+            animation: float 6s infinite ease-in-out 1s;
+        }
+
+        .shape-3 {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 85, 135, 0.2);
+            bottom: -20px;
+            left: 20%;
+            animation: float 7s infinite ease-in-out 0.5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        /* Services Section - Redesigned */
+        .services {
+            background: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0, 113, 188, 0.1), rgba(0, 160, 223, 0.1));
+            top: -150px;
+            left: -150px;
+        }
+
+        .services::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0, 160, 223, 0.1), rgba(0, 113, 188, 0.1));
+            bottom: -100px;
+            right: -100px;
+        }
+
+        .services-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .services-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .services-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .service-slide {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.5s ease;
+        }
+
+        .service-slide.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .service-image {
+            flex: 1;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: var(--transition);
+        }
+
+        .service-slide.active .service-image {
+            transform: perspective(1000px) rotateY(0);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+            z-index: 1;
+            opacity: 0.3;
+            transition: var(--transition);
+        }
+
+        .service-image:hover::before {
+            opacity: 0.5;
+        }
+
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .service-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-content h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        .service-content p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .service-features {
+            margin-bottom: 30px;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .service-features li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .carousel-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1.2rem;
+        }
+
+        .carousel-btn:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 113, 188, 0.4);
+        }
+
+        .carousel-dots {
+            display: flex;
+            gap: 15px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gray-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background: var(--primary-color);
+            transform: scale(1.3);
+        }
+
+        /* Service Grid View (for larger screens) */
+        .services-grid {
+            display: none;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-card-image img {
+            transform: scale(1.1);
+        }
+
+        .service-card-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .service-card-content p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 5px solid var(--primary-color);
+            border-radius: 10px;
+            top: 20px;
+            left: 20px;
+            z-index: -1;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose {
+            background: linear-gradient(135deg, rgba(0, 113, 188, 0.1), rgba(0, 160, 223, 0.1));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--light-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 3px solid var(--primary-color);
+        }
+
+        .testimonial-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-client {
+            margin-left: 15px;
+        }
+
+        .testimonial-client h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .client-position {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            margin: 15px 0;
+        }
+
+        .testimonial-rating i {
+            color: #FFD700;
+            margin-right: 3px;
+        }
+
+        .testimonial-text p {
+            font-style: italic;
+            line-height: 1.7;
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .testimonial-text p::before,
+        .testimonial-text p::after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            line-height: 1;
+        }
+
+        .testimonial-text p::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .testimonial-text p::after {
+            bottom: -20px;
+            right: 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+            background: var(--dark-color);
+            border-radius: 15px;
+            padding: 40px;
+            color: white;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+
+        .info-item h3 {
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .service-areas {
+            margin-top: 20px;
+            display: none; /* Hidden as per request */
+        }
+
+        .service-areas h4 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .area-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .area-item i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            flex: 1.5;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--gray-color);
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 113, 188, 0.2);
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 80px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .footer-logo p {
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+
+        .footer-services h4,
+        .footer-contact h4,
+        .footer-links h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-services h4::after,
+        .footer-contact h4::after,
+        .footer-links h4::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: -10px;
+            left: 0;
+        }
+
+        .footer-services ul li,
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .footer-contact .info-item {
+            margin-bottom: 15px;
+        }
+
+        .footer-contact .info-item i {
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* WhatsApp Floating Icon */
+        .whatsapp-float {
+            position: fixed;
+            left: 30px;
+            bottom: 30px;
+            z-index: 99;
+            transition: var(--transition);
+        }
+
+        .whatsapp-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .whatsapp-link i {
+            font-size: 30px;
+        }
+
+        .whatsapp-link:hover {
+            background: #20ba5a;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-link .tooltip {
+            position: absolute;
+            left: 80px;
+            background: var(--dark-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .whatsapp-link .tooltip::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid var(--dark-color);
+        }
+
+        .whatsapp-link:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+            left: 70px;
+        }
+
+        /* Back To Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 99;
+            box-shadow: 0 5px 15px rgba(0, 113, 188, 0.4);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+        /* Media Queries */
+        @media (min-width: 992px) {
+            .services-carousel {
+                display: none;
+            }
+            
+            .carousel-nav {
+                display: none;
+            }
+            
+            .services-grid {
+                display: grid;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .hero {
+                padding: 150px 30px 100px;
+            }
+            
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .service-slide {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .service-content h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .service-image {
+                width: 100%;
+                transform: perspective(1000px) rotateX(-5deg);
+            }
+            
+            .service-slide.active .service-image {
+                transform: perspective(1000px) rotateX(0);
+            }
+            
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+            
+            .hero-btns {
+                justify-content: center;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .stats {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 15px 30px;
+            }
+            
+            nav.scrolled {
+                padding: 15px 30px;
+            }
+            
+            .nav-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: white;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 50px;
+                transition: var(--transition);
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .cta-btn {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .about-image::before {
+                display: none;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .whatsapp-float {
+                left: 20px;
+                bottom: 20px;
+            }
+            
+            .whatsapp-link {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .whatsapp-link i {
+                font-size: 24px;
+            }
+            
+            .logo-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    
+    <!-- Preload important images -->
+    <link rel="preload" href="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" as="image">
+    <link rel="preload" href="Gemini_Generated_Image_azgp92azgp92azgp (1).png" as="image" imagesrcset="Gemini_Generated_Image_azgp92azgp92azgp (1)-small.jpg 600w, Gemini_Generated_Image_azgp92azgp92azgp (1)-medium.jpg 900w, Gemini_Generated_Image_azgp92azgp92azgp (1).png 1200w" imagesizes="(max-width: 600px) 100vw, (max-width: 900px) 90vw, 800px">
+</head>
+<body>
+    
+     <!-- Preloader with phasing logo animation -->
+    <div class="preloader">
+        <div class="logo-container">
+            <div class="logo-fade">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
+            </div>
+            <div class="logo-fade">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
+            </div>
+            <div class="logo-fade">
+                <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="150" height="150">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="Gemini_Generated_Image_rcnxhcrcnxhcrcnx.png" alt="Maji Maji Logo" width="40" height="40">
+            <span>Maji Maji</span>
+        </div>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-choose">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact" class="cta-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Professional Water Solutions for East Africa</h1>
+            <p>Expert borehole drilling, hydro-geological surveys, and solar pump installations. Serving communities across East Africa with reliable water access solutions.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn primary-btn">Get Free Quote</a>
+                <a href="#services" class="btn secondary-btn">View Our Work</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+             <img src="Gemini_Generated_Image_azgp92azgp92azgp (1).png" alt="Water Drilling in East Africa" width="600" height="400" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container services-container">
+            <div class="section-header">
+                <h2>Our <span class="accent">Services</span></h2>
+                <div class="underline"></div>
+                <p>Comprehensive water solutions tailored for East African communities and businesses</p>
+            </div>
+
+            <!-- Carousel for mobile/tablet -->
+            <div class="services-carousel">
+                <div class="service-slide active">
+                    <div class="service-image">
+                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Borehole Drilling" width="500" height="400" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Borehole Drilling</h3>
+                        <p>Professional water borehole drilling services using state-of-the-art equipment for reliable water access in residential and commercial properties.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Advanced drilling technology</li>
+                            <li><i class="fas fa-check-circle"></i> Residential & commercial solutions</li>
+                            <li><i class="fas fa-check-circle"></i> Reliable water access</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-slide">
+                    <div class="service-image">
+                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey" width="500" height="400" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hydro-Geological Survey</h3>
+                        <p>Comprehensive ground water surveys and geological assessments to identify optimal drilling locations and ensure successful water extraction.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Advanced geological assessment</li>
+                            <li><i class="fas fa-check-circle"></i> Optimal location identification</li>
+                            <li><i class="fas fa-check-circle"></i> Successful extraction guarantee</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-slide">
+                    <div class="service-image">
+                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Pump Testing" width="500" height="400" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Pump Testing</h3>
+                        <p>Professional pump performance testing and water quality analysis to ensure optimal system efficiency and water safety standards.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Performance testing</li>
+                            <li><i class="fas fa-check-circle"></i> Water quality analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Safety standard compliance</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-slide">
+                    <div class="service-image">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation" width="500" height="400" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Pump Installation</h3>
+                        <p>Expert installation of submersible and surface pumps with complete system setup including piping, electrical connections, and storage tanks.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Submersible & surface pumps</li>
+                            <li><i class="fas fa-check-circle"></i> Complete system setup</li>
+                            <li><i class="fas fa-check-circle"></i> Professional installation</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-slide">
+                    <div class="service-image">
+                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Solar System Installation" width="500" height="400" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Solar System Installation</h3>
+                        <p>Sustainable solar-powered water pumping systems that provide reliable, eco-friendly water solutions with reduced operational costs.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Sustainable solar power</li>
+                            <li><i class="fas fa-check-circle"></i> Eco-friendly solutions</li>
+                            <li><i class="fas fa-check-circle"></i> Reduced operational costs</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+                
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Grid for desktop -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Borehole Drilling" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Borehole Drilling</h3>
+                        <p>Professional water borehole drilling services using state-of-the-art equipment for reliable water access in residential and commercial properties.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_g6c1arg6c1arg6c1.png" alt="Hydro-Geological Survey" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Hydro-Geological Survey</h3>
+                        <p>Comprehensive ground water surveys and geological assessments to identify optimal drilling locations and ensure successful water extraction.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_wx7jopwx7jopwx7j.png" alt="Pump Testing" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Pump Testing</h3>
+                        <p>Professional pump performance testing and water quality analysis to ensure optimal system efficiency and water safety standards.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_vfz9puvfz9puvfz9.png" alt="Pump Installation" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Pump Installation</h3>
+                        <p>Expert installation of submersible and surface pumps with complete system setup including piping, electrical connections, and storage tanks.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_c24pycc24pycc24p.png" alt="Solar System Installation" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Solar System Installation</h3>
+                        <p>Sustainable solar-powered water pumping systems that provide reliable, eco-friendly water solutions with reduced operational costs.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="Gemini_Generated_Image_tlbcortlbcortlbc.png" alt="Solar System Installation" width="500" height="250" loading="lazy">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Maintenance & Support</h3>
+                        <p>Comprehensive maintenance services and 24/7 support to ensure your water systems operate efficiently and reliably year-round.</p>
+                        <a href="#contact" class="btn primary-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="accent">Maji Maji</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="Gemini_Generated_Image_xhgrq6xhgrq6xhgr.png" alt="Maji Maji Team" width="500" height="400" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3>East Africa's Trusted Water Solutions Provider</h3>
+                    <p>MAJI MAJI has become East Africa's trusted partner for comprehensive water solutions. Based in Thika town, we specialize in providing reliable access to clean water through professional borehole drilling and sustainable pumping systems.</p>
+                    <p>Our expertise spans across hydro-geological surveys, pump testing, installation services, and solar-powered water systems. We understand the unique challenges of East African terrain and climate, delivering solutions that are both effective and environmentally sustainable.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Successful Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span class="accent">Maji Maji</span></h2>
+                <div class="underline"></div>
+                <p>Trusted expertise for all your water solution needs</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Professionals</h3>
+                    <p>Licensed and experienced team with extensive knowledge of East African geology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Solutions</h3>
+                    <p>Solar-powered systems and sustainable practices for environmental protection</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support and emergency maintenance services</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Guarantee</h3>
+                    <p>Comprehensive warranty and quality assurance on all our installations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client <span class="accent">Testimonials</span></h2>
+                <div class="underline"></div>
+                <p>What our clients say about our water solutions</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Kamau" width="70" height="70" loading="lazy">
+                        </div>
+                        <div class="testimonial-client">
+                            <h4>John Kamau</h4>
+                            <p class="client-position">Community Leader, Murang'a County</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"Maji Maji transformed our community with reliable water access. Their professional borehole drilling service has provided clean water to over 200 households in our village. The team was punctual, professional, and completed the project ahead of schedule."</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mwangi" width="70" height="70" loading="lazy">
+                        </div>
+                        <div class="testimonial-client">
+                            <h4>Sarah Mwangi</h4>
+                            <p class="client-position">Farm Owner, Nakuru</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"The solar pump installation by Maji Maji has significantly reduced our operational costs. Their expertise in solar-powered water systems is unmatched in the region. We've been using their maintenance services for over a year now with zero complaints."</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-img">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Ochieng" width="70" height="70" loading="lazy">
+                        </div>
+                        <div class="testimonial-client">
+                            <h4>David Ochieng</h4>
+                            <p class="client-position">Hotel Manager, Kisumu</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"We've been using Maji Maji's maintenance services for three years now. Their 24/7 support has been invaluable for our hotel business, ensuring we never run out of water. Their team is always responsive and professional in their approach."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact <span class="accent">Us</span></h2>
+                <div class="underline"></div>
+                <p>Get in touch for your water solution needs</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+254712472043</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>maina.manases@yahoo.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Thika Town, Kenya East Africa</p>
+                        </div>
+                    </div>
+                    <div class="service-areas">
+                        <h4>Service Areas</h4>
+                        <div class="areas-grid">
+                            <div class="area-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Kenya - Central & Eastern Regions</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Uganda - Selected Areas</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tanzania - Northern Regions</span>
+                            </div>
+                            <div class="area-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Rwanda - Major Cities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Select service type</option>
+                                <option value="borehole">Borehole Drilling</option>
+                                <option value="survey">Hydro-Geological Survey</option>
+                                <option value="pump-testing">Pump Testing</option>
+                                <option value="pump-installation">Pump Installation</option>
+                                <option value="solar">Solar System Installation</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Message (Maximum 500 characters)" maxlength="500" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Maji Maji</h3>
+                    <p>East Africa's trusted water solutions provider, delivering reliable borehole drilling and solar pump installations.</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Borehole Drilling</li>
+                        <li>Hydro-Geological Survey</li>
+                        <li>Pump Testing</li>
+                        <li>Pump Installation</li>
+                        <li>Solar Systems</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+254712472043</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>maina.manases@yahoo.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Thika Town, Kenya</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#why-choose">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAJI MAJI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Icon -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/254712472043" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="tooltip">Chat with us</span>
+        </a>
+    </div>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Load JavaScript asynchronously -->
+    <script>
+        // Function to load non-critical JavaScript
+        function loadScript(src, callback) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            script.onload = callback;
+            document.body.appendChild(script);
+        }
+
+        // Preloader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            }, 1500);
+        });
+
+        // Navigation
+        const nav = document.querySelector('nav');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            
+            // Back to top button
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 500) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+
+        // Mobile menu toggle
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Services Carousel Functionality - Modified to remove auto-scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.service-slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentSlide = 0;
+
+            // Function to show a specific slide
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                
+                // Remove active class from all dots
+                dots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                
+                // Show the selected slide
+                slides[index].classList.add('active');
+                
+                // Activate the corresponding dot
+                dots[index].classList.add('active');
+                
+                // Update currentSlide
+                currentSlide = index;
+                
+                // Scroll the carousel to the active slide
+                const carousel = document.querySelector('.services-carousel');
+                carousel.scrollLeft = slides[index].offsetLeft - carousel.offsetLeft;
+            }
+
+            // Next slide
+            function nextSlide() {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+
+            // Previous slide
+            function prevSlide() {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            }
+
+            // Add event listeners to buttons
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Add event listeners to dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    let slideIndex = parseInt(this.getAttribute('data-index'));
+                    showSlide(slideIndex);
+                });
+            });
+
+            // Handle swipe events for touch devices
+            let startX = 0;
+            let endX = 0;
+            
+            const carousel = document.querySelector('.services-carousel');
+            carousel.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            }, false);
+
+            carousel.addEventListener('touchend', (e) => {
+                endX = e.changedTouches[0].clientX;
+                handleSwipe();
+            }, false);
+
+            function handleSwipe() {
+                if (endX < startX) {
+                    // Swipe left - next slide
+                    nextSlide();
+                }
+                if (endX > startX) {
+                    // Swipe right - previous slide
+                    prevSlide();
+                }
+            }
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const service = document.getElementById('service').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send the form data to a server
+                // For demonstration purposes, we'll just show a success message
+                
+                // Clear form fields
+                contactForm.reset();
+                
+                // Show success message
+                alert(`Thank you, ${name}! Your message has been sent successfully. We'll get back to you soon.`);
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
